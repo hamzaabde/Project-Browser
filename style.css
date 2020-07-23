@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: arial, Halvetica, Sans-serif;
+}
+
+button {
+	outline: none;
+}
+/* Clearing defaults */
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 4px solid #ccc;
+}
+
+header h1 {
+	flex: 2;
+	font-family: serif;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+header h1 > span {
+	font-size: .75em;
+	color: lightgreen;
+}
+
+header p {
+	font-size: 2em;
+	font-style: italic;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 4px;
+}
+
+.controls > button {
+	font-size: 2em;
+	padding: 2px 4px;
+	margin: 0 5px;
+	margin: collapse;
+}
+
+.controls button:first-child {
+	background-color: green;
+	color: #ddd;
+	cursor: pointer;
+}
+
+.controls button:last-child {
+	background-color: darkred;
+	color: #ddd;
+	cursor: pointer;
+}
+
+/* Header section */
+
+main {
+	width: 100vw;
+	font-size: 2em;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap; /* This is flex-direction and flex-warp combined */
+	width: 100%;
+}
+
+.project {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	width: 24%;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 5px 0;
+	margin-left: 1%;
+	text-align: center;
+	background-color: #aaa;
+	box-shadow: 0 0 1px 1px #aaa;
+}
+
+.project:hover {
+	cursor: pointer;
+	box-shadow: 0 0 3px 2px #aaa;
+}
+
+.project-title {
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+.project-info {
+	width: 100%;
+	padding: 2px;
+	text-align: left;
+	/* box shadow */
+	box-shadow: 0 0 2px 1px #ddd;
+	font-style: italic;
+	font-size: .8em;
+	background-color: #ddd;
+}
